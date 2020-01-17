@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".activities.SearchActivity">
+
+	<androidx.coordinatorlayout.widget.CoordinatorLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fitsSystemWindows="true">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/notification_app_bar_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/search_activity_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:background="#ffff"
+			android:contentInsetLeft="0dp"
+			android:contentInsetStart="0dp"
+			android:elevation="0.1dp"
+			android:paddingEnd="10dp"
+			android:paddingStart="10dp"
+			app:contentInsetLeft="0dp"
+			app:contentInsetStart="0dp"
+			app:layout_scrollFlags="scroll|enterAlways|snap"
+			tools:targetApi="lollipop">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+
+				<LinearLayout
+					android:id="@+id/search_back_arrow_layout"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="start"
+					android:orientation="horizontal">
+
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="5dp"
+						android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/toolbar_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:text="Search"
+					android:textColor="#000"
+					android:textSize="18sp" />
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="end"
+					android:orientation="horizontal">
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</androidx.appcompat.widget.Toolbar>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+		android:id="@+id/SearchProgressBarId"
+		android:layout_width="match_parent"
+		android:layout_height="20dp"
+		style="@style/GNowProgressBar"
+		android:visibility="invisible"
+		android:indeterminate="true"
+		android:layout_marginTop="40dp"/>
+
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_marginStart="20dp"
+			android:layout_marginEnd="20dp"
+			android:layout_marginTop="60dp">
+			<LinearLayout
+				android:id="@+id/search_layout_icon"
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="0.2">
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:src="@drawable/ic_cloud_computing"/>
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1">
+				<EditText
+					android:id="@+id/search_content"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:hint="search for books..."
+					android:backgroundTint="@color/colorInActive"/>
+			</LinearLayout>
+		</LinearLayout>
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/search_recycler_view"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="50dp"
+		app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+	</androidx.recyclerview.widget.RecyclerView>
+
+	</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

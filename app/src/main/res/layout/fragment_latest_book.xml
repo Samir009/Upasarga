@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".fragments.LatestBookFragment">
+	<fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+		android:id="@+id/latestbookProgressBarId"
+		android:layout_width="match_parent"
+		android:layout_height="20dp"
+		style="@style/GNowProgressBar"
+		android:visibility="invisible"
+		android:indeterminate="true"
+		android:layout_marginTop="-5dp"/>
+
+	<!-- TODO: Update blank fragment layout -->
+	<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+		android:id="@+id/latestbookSwipeToRefresh"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/latest_book_recycler_view"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="50dp"
+		android:clipToPadding="false"/>
+
+	</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</FrameLayout>

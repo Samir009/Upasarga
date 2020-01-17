@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splashScreenBackground"
+    tools:context=".activities.SplashScreen">
+
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:id="@+id/splash_image_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/book_background"/>
+
+
+    <RelativeLayout
+        android:layout_marginTop="-50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splash_image_id"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/splash_content_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="50dp"
+            android:text="Digital Kitab"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

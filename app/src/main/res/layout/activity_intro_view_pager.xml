@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.IntroViewPagerActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/btn_get_started"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/background_button_fill_primary1"
+            android:padding="10dp"
+            android:text="Get Started"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/view_pager"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.tabs.TabLayout
+            app:tabBackground="@drawable/indicator_selector"
+            android:id="@+id/id_tablayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:tabIndicator="@color/customColor"/>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp">
+            <Button
+                android:id="@+id/btn_next"
+                android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/simple_btn_background"
+                android:gravity="center"
+                android:text="Next"
+                android:textColor="#e67e22"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

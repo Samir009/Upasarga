@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Upasarga Technologies</string>
+    <string name="organization_logo">Upasarga Technologies</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="day_theme">Day Theme</string>
+    <string name="night_theme">Night Theme</string>
+    <string name="automatic_theme">Automatic Theme</string>
+</resources>

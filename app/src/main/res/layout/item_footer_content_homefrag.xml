@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="10dp">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="25dp"
+			android:layout_weight="1">
+			<TextView
+				android:id="@+id/footer_title_id"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="Latest Books"
+				android:textStyle="bold"
+				android:textSize="20dp"/>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="20dp"
+			android:layout_weight="1">
+			<TextView
+				android:id="@+id/id_view_all_latest_book"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="view all"
+				android:textAlignment="textEnd"
+				android:textColor="@color/colorDefault"/>
+		</LinearLayout>
+	</LinearLayout>
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/footer_recycler_view"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+	</androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

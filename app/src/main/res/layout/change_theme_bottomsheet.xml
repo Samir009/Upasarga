@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Theme"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/day_night_theme_rbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/day_theme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableEnd="@android:drawable/btn_radio"
+            android:gravity="start|fill_vertical"
+            android:textStyle="bold"
+            android:button="@null"
+            android:text="@string/day_theme"
+            android:textSize="20sp" />
+
+
+        <RadioButton
+            android:id="@+id/night_theme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableEnd="@android:drawable/btn_radio"
+            android:gravity="start|fill_vertical"
+            android:textStyle="bold"
+            android:button="@null"
+            android:text="@string/night_theme"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/auto_theme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableEnd="@android:drawable/btn_radio"
+            android:gravity="start|fill_vertical"
+            android:textStyle="bold"
+            android:button="@null"
+            android:text="@string/automatic_theme"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+
+</LinearLayout>

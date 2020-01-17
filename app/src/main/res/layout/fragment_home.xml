@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".fragments.HomeFragment">
+
+	<!-- TODO: Update blank fragment layout -->
+
+	<fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+		android:id="@+id/homeFragProgressBarId"
+		android:layout_width="match_parent"
+		android:layout_height="20dp"
+		style="@style/GNowProgressBar"
+		android:visibility="invisible"
+		android:indeterminate="true"/>
+
+<!--	<TextView-->
+<!--		android:id="@+id/themeChangeText"-->
+<!--		android:layout_width="wrap_content"-->
+<!--		android:layout_height="wrap_content"-->
+<!--		android:text="test for theme change"/>-->
+
+	<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+		android:id="@+id/swipeToRefreshHomeFrag"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/recyclerview_home_fragment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="50dp"
+		android:layout_marginTop="50dp"
+		android:clipToPadding="false">
+
+	</androidx.recyclerview.widget.RecyclerView>
+
+	</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</FrameLayout>

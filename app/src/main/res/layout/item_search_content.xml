@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/get_searched_item">
+
+
+	<View
+		android:layout_width="wrap_content"
+		android:layout_height="1dp"
+		android:background="#241313">
+
+	</View>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="150dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			android:layout_margin="10dp">
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_weight="1.5"
+				android:layout_height="match_parent">
+				<ImageView
+					android:id="@+id/notification_image"
+					android:layout_gravity="center"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:src="@drawable/ic_open_book"
+					android:scaleType="centerCrop">
+
+				</ImageView>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_marginStart="10dp"
+				android:layout_marginEnd="10dp"
+				android:layout_width="0dp"
+				android:layout_weight="3"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:gravity="center">
+
+				<TextView
+					android:id="@+id/notification_book_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Book Title"
+					android:textStyle="bold">
+
+				</TextView>
+
+				<TextView
+					android:id="@+id/notification_book_description"
+					android:layout_marginTop="10dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Description">
+
+				</TextView>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="match_parent">
+
+				<TextView
+					android:id="@+id/notification_time"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:text="3 Min \n ago"
+					android:textAlignment="center">
+
+				</TextView>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

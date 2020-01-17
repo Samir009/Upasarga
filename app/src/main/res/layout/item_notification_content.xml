@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="130dp">
+
+
+	<androidx.cardview.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_margin="10dp"
+		app:cardElevation="8dp">
+
+		<LinearLayout
+			android:id="@+id/open_book_details_from_notification"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_vertical"
+				android:layout_weight="0.50"
+				android:padding="20px">
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="center">
+					<TextView
+						android:id="@+id/notification_title"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:textSize="16dp"
+						android:textStyle="bold"
+						android:textAlignment="center"
+						android:gravity="center"
+						android:textColor="#000"
+						android:text="Title"/>
+				</LinearLayout>
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1">
+
+					<TextView
+						android:id="@+id/notification_description"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:textSize="15dp"
+						android:layout_marginTop="25dp"
+						android:textStyle="bold"
+						android:text="descrption"
+						android:layout_marginLeft="10dp"/>
+
+				<TextView
+					android:id="@+id/seen_unseen_notification"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="seen unseen"
+					android:layout_marginTop="5dp"
+					android:layout_marginLeft="10dp"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="0.3">
+				<TextView
+					android:id="@+id/notification_date"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:textAlignment="center"
+					android:gravity="center"
+					android:text="notification description"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</androidx.cardview.widget.CardView>
+
+</LinearLayout>

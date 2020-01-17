@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:gravity="center">
+
+		<ImageView
+			android:id="@+id/vp_img"
+			android:layout_width="150dp"
+			android:layout_height="150dp"
+			android:src="@drawable/ic_open_book"/>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/vp_title"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="0.2"
+		android:textAlignment="center"
+		android:textSize="25dp"
+		android:textColor="@color/customColor1"
+		android:text="Title"/>
+
+
+	<TextView
+		android:id="@+id/vp_description"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:textAlignment="center"
+		android:textColor="@color/customColor1"
+		android:text="Description"/>
+
+
+</LinearLayout>

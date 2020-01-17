@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".activities.BookDetailsActivity">
+
+	<androidx.coordinatorlayout.widget.CoordinatorLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:fitsSystemWindows="true">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/notification_app_bar_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/main_activity_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:background="#ffff"
+			android:contentInsetLeft="0dp"
+			android:contentInsetStart="0dp"
+			android:elevation="0.1dp"
+			android:paddingEnd="10dp"
+			android:paddingStart="10dp"
+			app:contentInsetLeft="0dp"
+			app:contentInsetStart="0dp"
+			app:layout_scrollFlags="scroll|enterAlways|snap"
+			tools:targetApi="lollipop">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+
+				<LinearLayout
+					android:id="@+id/bookdetails_back_arrow_layout"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="start"
+					android:orientation="horizontal">
+
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="5dp"
+						android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/toolbar_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:text="Book Details"
+					android:textColor="#000"
+					android:textSize="18sp" />
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="end"
+					android:orientation="horizontal">
+
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</androidx.appcompat.widget.Toolbar>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/notification_app_bar_layout"
+		android:orientation="vertical"
+		app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+			<androidx.cardview.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<ScrollView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+					android:layout_marginBottom="30dp">
+
+					<ImageView
+						android:id="@+id/id_book_details_img"
+						android:layout_width="match_parent"
+						android:layout_height="300dp"
+						android:src="@drawable/ic_open_book"/>
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center_horizontal"
+						android:layout_margin="20dp">
+
+						<TextView
+							android:id="@+id/id_book_details_book_name"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_horizontal"
+							android:textAlignment="center"
+							android:text="Book Name"
+							android:textSize="20dp"
+							android:textColor="@color/customColor1"
+							android:textStyle="bold"/>
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="10dp">
+							<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:src="@drawable/ic_calendar"/>
+							<TextView
+								android:id="@+id/id_book_details_published_date"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Published Date"/>
+						</LinearLayout>
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="10dp">
+							<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:src="@drawable/ic_poet"/>
+							<TextView
+								android:id="@+id/id_book_details_writer_name"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Writer Name"/>
+						</LinearLayout>
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="10dp">
+							<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:src="@drawable/ic_book_cat"/>
+							<TextView
+								android:id="@+id/id_book_details_book_category"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Book Category"/>
+						</LinearLayout>
+
+					</LinearLayout>
+
+
+
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="10dp"
+						android:background="@drawable/cardlayout_background6">
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Description"
+							android:textSize="20dp"
+							android:textColor="@color/customColor1"/>
+
+						<TextView
+							android:id="@+id/id_book_description"
+							android:layout_marginTop="10dp"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="This is description of book. This is description of book. This is description of book. This is description of book. This is description of book. This is description of book. "/>
+					</LinearLayout>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="10dp"
+						android:layout_marginTop="20dp"
+						android:layout_marginBottom="20dp"
+						android:text="Similar Books"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<androidx.recyclerview.widget.RecyclerView
+						android:id="@+id/similar_books_recyclerview"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="10dp"/>
+				</LinearLayout>
+
+				</ScrollView>
+
+			</androidx.cardview.widget.CardView>
+
+	</LinearLayout>
+
+
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/fab_reading_icon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="end|bottom"
+		android:layout_margin="16dp"
+		app:backgroundTint="@color/colorWhite"
+		android:src="@drawable/ic_reading"
+		app:maxImageSize="50dp"
+		android:layout_marginEnd="24dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>
